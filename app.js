@@ -9,13 +9,13 @@ app.use(bodyParser.urlencoded({
 }))
 
 app.use(cors({
-  origin:['http://127.0.0.1:8080'],
+  origin:['http://127.0.0.1:3000'],
   credential:true
 }))
 
 app.use(express.static('public'));
 
-app.listen(3000,()=>{
+app.listen(3001,()=>{
   console.log('服务已启动');
 });
 
